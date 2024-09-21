@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+    line-height: 30px;
+}
 
 body{
     background: linear-gradient(120deg, #f5d25e, #fda085);
@@ -12,6 +16,23 @@ body{
 }
 header{
     font-size: 1.5rem;
+}
+.work{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.work h2{
+    font-size: 3rem;
+    text-align: left;
+}
+.work h6{
+    font-size: 1.85rem;
+}
+.work p{
+    font-size: 1.85rem;
 }
 header,
 form {
@@ -118,4 +139,17 @@ select{
 .select:hover::after{
     background-color: white;
     color: #d88771;
+}
+
+/* Responsive screen*/
+
+@media (max-width: 768px){
+    html{
+        font-size: 50%;
+        font-weight: bold;
+        line-height: 20px;
+    }
+    .work{
+        padding: 5rem;
+    }
 }
